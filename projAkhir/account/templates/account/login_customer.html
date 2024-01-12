@@ -1,0 +1,46 @@
+{% if user.is_authenticated %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer</title>
+  <link rel="stylesheet" href="{% static 'account/customer.css' %}"> 
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <span>FM.</span>
+      {% comment %} <a href="#"><img src="public/playground_assets/GOPAL.png" class="GOPAL"></a> {% endcomment %}
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="{% static 'account/img/red.png' %}" class="avatar" />
+        </a>
+      </li>
+
+    </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Ini bukan bengkel biasa<br>Ini adalah <span>FLex Mechanic</span></h2>
+        <p>selamat datang pada web kami.</p>
+        <a href="#">Input Lokasi</a>
+      </div>
+      <div class="imgBox">
+        <img src="public/playground_assets/pngwing1825-lfkf-700w.png" class="Flex Mechanic">
+      </div> 
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="public/playground_assets/facebook.png"></a></li>
+      <li><a href="#"><img src="public/playground_assets/twitter.png"></a></li>
+      <li><a href="#"><img src="public/playground_assets/instagram.png"></a></li>
+    </ul>
+  </section>
+</body>
+</html>
+{% else %}
+<button type='submit'><a href="{% url 'signupopt' %}">signup</a>  </button>
+<button type='submit'><a href="/signin">Signin</a>  </button>
+{% endif %}

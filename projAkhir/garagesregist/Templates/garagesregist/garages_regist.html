@@ -1,0 +1,23 @@
+<h1>Garage Regist</h1>
+<form action="/garagesregist/" method="post" >
+    {% csrf_token %}
+
+    
+    <label for="">Garage Name</label>
+    <input id="garage_name" type="text" name="garage_name">
+    <br>
+  
+    <label for="">Address</label>
+    <input id="address" type="text" name="address">
+    <br>
+
+    <label for="">Available Services</label>
+    <input id="services" type="text" name="services">
+    <br>
+
+
+    <button> Pinpoint location </button>
+    
+    <input type="submit" value="Submit">
+
+</form>

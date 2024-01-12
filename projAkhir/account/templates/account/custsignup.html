@@ -1,0 +1,27 @@
+<h1>Customer Signup</h1>
+<form action="/customersignup" method="post" >
+    {% csrf_token %}
+
+    <label for="">First Name</label>
+    <input id="fname" type="text" name="fname">
+    <br>
+    <label for="">Last Name</label>
+    <input id="lname" type="text" name="lname">
+    <br>
+    <label for="">Email Address</label>
+    <input id="email" type="email" name="email">
+    <br>
+    <label for="">Password </label>
+    <input id="password1" type="password" name="password1" value="{{ current_name }}">
+    <br>
+  
+    <input id="type" type="hidden" name="type" value="customer">
+    <br>
+
+    <label for="">Confirm your password </label>
+    <input id="password2" type="password" name="password2" value="{{ current_name }}">
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>

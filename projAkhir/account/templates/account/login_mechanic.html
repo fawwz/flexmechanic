@@ -1,0 +1,54 @@
+{% if user.is_authenticated %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanic</title>
+  <link rel="stylesheet" href="{% static 'account/mechanic.css' %}"> 
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="{% static 'account/img/GOPAL.png' %}" class="GOPAL"></a>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="{% static 'account/img/mechanic.png' %}" width="40" height="40" class="rounded-circle" />
+        </a>
+      </li>
+
+    </ul>
+    </header>
+    <div class="content">
+      {% if initial_data.owner_nik %}
+      <div class="textBox">
+        <h2>Ini bukan bengkel biasa<br>Ini adalah <span>Flex Mechanic</span></h2>
+        <p>selamat datang, partner. Kamu sudah melengkapi profile.</p>
+        <p>tekan tombol dibawah untuk mendaftarkan bengkel kamu</p>
+        <a href="{% url 'garagesregist' %}">Daftarkan Bengkel</a>
+      </div>
+      {% else %}
+      <div class="textBox">
+        <h2>Ini bukan bengkel biasa<br>Ini adalah <span>Flex Mechanic</span></h2>
+        <p>selamat datang, partner. Ayo lengkapi profile kamu supaya bisa daftarkan Garage milikmu di apps kami</p>
+        <a href="{% url 'mechanicprofile' %}">Lengkapi Profile</a>
+      </div>
+    {% endif %}
+      <div class="imgBox">
+        <img src="{% static 'account/img/pngwing1825-lfkf-700w.png' %}" class="Flex Mechanic">
+      </div> 
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="{% static 'account/img/facebook.png' %}"></a></li>
+      <li><a href="#"><img src="{% static 'account/img/twitter.png' %}"></a></li>
+      <li><a href="#"><img src="{% static 'account/img/instagram.png' %}"></a></li>
+    </ul>
+  </section>
+</body>
+</html>
+{% else %}
+<button type='submit'><a href="{% url 'signupopt' %}">signup</a>  </button>
+<button type='submit'><a href="/signin">Signin</a>  </button>
+{% endif %}

@@ -1,0 +1,310 @@
+.homepage-container {
+  min-height: 100vh;
+}
+.homepage-homepage {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+  background-color: rgba(241, 243, 242, 1);
+}
+.homepage-text {
+  top: 260px;
+  left: 0px;
+  color: rgba(31, 29, 43, 0.05000000074505806);
+  right: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 200px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: right;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 110.50000190734863%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-container1 {
+  top: 90px;
+  left: 0px;
+  right: 0px;
+  width: 1052px;
+  height: 48px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.homepage-frame2 {
+  top: 9px;
+  left: 357px;
+  width: 332px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.homepage-text02 {
+  color: rgba(31, 29, 43, 1);
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 35px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-text04 {
+  color: rgba(31, 29, 43, 1);
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 35px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-text06 {
+  color: rgba(31, 29, 43, 1);
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-text08 {
+  top: 9px;
+  color: rgba(0, 0, 0, 1);
+  right: 288px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-group21 {
+  top: 7px;
+  right: 0px;
+  width: 115px;
+  height: 40px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepage-text09 {
+  top: 5px;
+  left: 35px;
+  color: rgba(31, 29, 43, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-text11 {
+  top: 0px;
+  left: 0px;
+  color: rgba(31, 29, 43, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-pngwing1 {
+  top: 584px;
+  left: 200px;
+  width: 605px;
+  height: 288px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-image6695a6b976f14b269ced6f4f2badd1f91 {
+  top: 459.781005859375px;
+  left: 1294.9862060546875px;
+  width: 576px;
+  height: 514px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-container2 {
+  top: 292px;
+  left: 0px;
+  right: 0px;
+  width: 658.484375px;
+  height: 138px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.homepage-text13 {
+  top: 0px;
+  left: 105px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-text15 {
+  top: 66px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-text16 {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+.homepage-frame3 {
+  top: 446px;
+  left: 0px;
+  right: 0px;
+  width: 163px;
+  margin: auto;
+  display: flex;
+  padding: 20px 30px;
+  position: absolute;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: center;
+  border-color: transparent;
+  justify-content: center;
+  background-color: rgba(43, 41, 55, 1);
+}
+.homepage-text18 {
+  color: rgba(241, 240, 242, 1);
+  height: auto;
+  font-size: 16px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 125.99999904632568%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepage-vespa {
+  top: 438px;
+  left: 890px;
+  width: 440px;
+  height: 432px;
+  position: absolute;
+  border-color: transparent;
+}
+@media(max-width: 1200px) {
+  .homepage-pngwing1 {
+    top: 574px;
+    left: 22px;
+  }
+  .homepage-vespa {
+    top: 446px;
+    left: 659px;
+    right: 93px;
+    width: 405px;
+    bottom: -15px;
+    height: 397px;
+  }
+}
+@media(max-width: 991px) {
+  .homepage-pngwing1 {
+    top: 616px;
+    left: 40px;
+    width: 445px;
+    height: 211px;
+  }
+  .homepage-vespa {
+    top: 554px;
+    left: 602px;
+    right: 82px;
+    width: 340px;
+    height: 332px;
+  }
+}

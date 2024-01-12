@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<html>
+
+<head>
+    <meta charset=""UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Option</title>
+    <link rel="stylesheet" href="{% static 'account/signupopt.css' %}">
+    <link rel="icon" href="img/GOPAL.png">
+    
+</head>
+
+<body>
+    <div>
+          <div class="container">
+            <div class="card-one">
+              <div class="SignUp-Cust">
+                <h1> Sign Up as Customer</h1>
+              </div>
+              <div class="desc-Cust">
+                So we can reach you out whenever you need us to fix your vehicles.
+              </div>
+              <button class="btn-outline-sm"> <a href="{% url 'customersignup' %}"> Sign Up </a> </button>
+            </div>
+        
+            <div class="card-two">
+              <div class="SignUp-Mec">
+                <h1>Sign Up as Mechanic</h1>
+              </div>
+              <div class="desc-Mec">
+                So we can connect you to Customers who
+                need your help
+              </div>
+              <button class="btn-outline-sm" href="signupMec.html"><a href="{% url 'mechanicsignup' %}"> Sign Up </a></button>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+{% endblock content  %}
+
+
+    
+        
+
+

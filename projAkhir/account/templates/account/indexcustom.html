@@ -1,0 +1,55 @@
+{% if user.is_authenticated %}
+<h1>Hello, {{ first_name }}, how can we help you today ?</h1>
+
+<h2>Login Successfull</h2>
+
+<h3>Please input your current location so we can send our mechanics to help you fix your vehicles</h3>
+<button type='submit'><a href=" ">Input my location</a>  </button>
+
+
+<form action=" {% url 'logout' %} " method="post">
+    {% csrf_token %}
+    <button type='submit'> Signout </button>
+</form>
+
+<div id="map"></div>
+
+<button id="current-location-button">Use Current Location</button>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      // Create a new map centered on a default location
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+
+      // Add a click event listener to the "current-location-button" element
+      var currentLocationButton = document.getElementById('current-location-button');
+      currentLocationButton.addEventListener('click', getCurrentLocation);
+
+      function getCurrentLocation() {
+        if (navigator.geolocation) {
+          // Get the user's current position
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+            // Center the map on the user's position and add a marker
+            map.setCenter(userLatLng);
+            var marker = new google.maps.Marker({
+              position: userLatLng,
+              map: map
+            });
+          });
+        } else {
+          alert('Geolocation is not supported by this browser.');
+        }
+      }
+    }
+  </script>
+
+{% else %}
+<button type='submit'><a href="{% url 'signupopt' %}">signup</a>  </button>
+<button type='submit'><a href="/signin">Signin</a>  </button>
+{% endif %}

@@ -1,0 +1,115 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset=""UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Option</title>
+    <link rel="stylesheet" href="{% static 'account/style.css' %}">
+    <link rel="stylesheet" href="model.css">
+    <link rel="icon" href="img/GOPAL.png">
+    
+</head>
+
+<body>
+  <div>
+    <link href="{% static 'account/homepage.css' %}" rel="stylesheet" />
+
+    <div class="homepage-container">
+      <div class="homepage-homepage">
+        <span class="homepage-text"><span>FLEX MECHANIC</span></span>
+        <div class="homepage-container1">
+          <div class="homepage-frame2">
+            <a href="servicespage.html" class="homepage-text02">
+              <span>Services</span>
+            </a>
+            <a href="aboutus.html" class="homepage-text04">
+              <span>About us</span>
+            </a>
+            <a href="contact.html" class="homepage-text06">
+              <span>Contact</span>
+            </a>
+          </div>
+          <span class="homepage-text08"></span>
+          <div class="homepage-group21">
+            <a href="{% url 'signin' %}" class="homepage-group21">
+              <h3>Login</h3>
+            </a>
+          </div>
+          <a href="{% url 'home' %}" class="homepage-text11"><span>FM.</span></a>
+        </div> 
+
+            <section class="ftco-section">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Flex Mechanic</h2>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-9 col-lg-6">
+                    <div class="login-wrap">
+                      <h3 class="mb-4 text-center">Create Your Account</h3>
+                      <form action="/customersignup" method="post" class="signup-form">
+                        {% csrf_token %}
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" placeholder="First Name" name="fname">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" placeholder="Last Name" name="lname">
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group mb-4">
+                              <input type="password" class="form-control" placeholder="Password" name="password1">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group mb-4">
+                              <input type="password" class="form-control" placeholder="Confirm Password" name="password2">
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group d-flex">
+                              <input id="type" type="hidden" name="type" value="customer">
+                              <button type="submit" class="btn btn-primary rounded submit p-3">Sign Up</button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="w-100 social-wrap">
+                        <p class="mt-4">I'm already a member! <a href="{% url 'signin' %}">Sign In</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+          
+<script src="{% static 'account/JS/jquery.min.js' %}"></script>
+<script src="{% static 'account/JS/popper.js' %}"></script>
+<script src="{% static 'account/JS/bootstrap.min.js' %}"></script>
+<script src="{% static 'account/JS/main.js' %}"></script>
+
+</body>
+</html>
+
+            
+

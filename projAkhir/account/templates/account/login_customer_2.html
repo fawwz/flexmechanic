@@ -1,0 +1,236 @@
+{% if user.is_authenticated %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Mechanic Website</title>
+    <link rel="stylesheet" href="{% static 'account/styleCustInd.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="{% static 'account/img/GOPAL.png' %}" class="navbar-logo" alt="logo" />
+        <ul class="navbar-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">APP</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+  
+        <div class="profile-dropdown">
+          <div onclick="toggle()" class="profile-dropdown-btn">
+            <div class="profile-img">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+  
+            <span
+              >My Profile
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+  
+          <ul class="profile-dropdown-list">
+            <li class="profile-dropdown-list-item">
+              <a href="{% url 'home' %}">
+                <i class="fa-regular fa-user"></i>
+                Edit Profile
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-regular fa-envelope"></i>
+                Inbox
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-solid fa-sliders"></i>
+                Settings
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-regular fa-circle-question"></i>
+                Help & Support
+              </a>
+            </li>
+            <hr />
+  
+            <li class="profile-dropdown-list-item">
+              <a href="{% url 'logout' %}">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Welcome To</span>
+            <h1>Flex Mechanic</h1>
+            <h2>Free For All <br>tap away</h2>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="home-image">
+            <img src="{% static 'account/img/vespa827-doz9-500h.png' %}" alt="">
+        </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Shop Now</span>
+            <h1>Shop Engine</h1>
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="{% static 'account/img/vespa827-doz9-500h.png' %}" alt="">
+                </div>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <h2>Flex Mechanic</h2>
+                <span>$ 12.4</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{% static 'account/img/pngwing1825-lfkf-700w.png' %}" alt="">
+                </div>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <h2>Flex Mechanic</h2>
+                <span>$ 12.4</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="public/playground_assets/WhatsApp Image 2023-05-04 at 19.39.10.jpg" alt="">
+                </div>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <h2>Flex Mechanic</h2>
+                <span>$ 12.4</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="delivery" id="delivery">
+        <div class="heading">
+            <span>Get Now</span>
+            <h1>Order With Online</h1>
+        </div>
+        <div class="container">
+            <div class="delivery-img">
+                <img src="{% static 'account/img/vespa827-doz9-500h.png' %}" alt="">
+            </div>
+            <div class="delivery-text">
+                <h2>Today Its Good Day</h2>
+                <p>Bla bla bla bla bla bla bla bla</p>
+                <p>Bla bla bla bla bla bla bla bla</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- App -->
+    <section class="app" id="app">
+        <div class="heading">
+            <span>Our App</span>
+            <h1>Download App</h1>
+        </div>
+        <div class="container">
+          
+            <div class="app-text">
+                <h2>Today Its Good Day</h2>
+                <p>Bla bla bla bla bla bla bla bla</p>
+                <p>Bla bla bla bla bla bla bla bla</p>
+                <a href="#" class="btn">Get App</a>
+            </div>
+            <div class="app-img">
+                <img src="{% static 'account/img/vespa827-doz9-500h.png' %}" alt="">
+            </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{% static 'account/img/vespa827-doz9-500h.png' %}" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Today Its Good Day</h2>
+            <p>Bla bla bla bla bla bla bla bla</p>
+            <p>Bla bla bla bla bla bla bla bla</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+        <p>&#169; Flex Mechanic Company.</p>
+    </section>
+
+    <!-- Link To Custom JS -->
+    <script src="{% static 'account/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'account/script.js' %}"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
+{% else %}
+<button type='submit'><a href="{% url 'signupopt' %}">signup</a>  </button>
+<button type='submit'><a href="/signin">Signin</a>  </button>
+{% endif %}

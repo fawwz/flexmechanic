@@ -1,0 +1,17 @@
+{% if user.is_authenticated %}
+<h1>Hello partner {{ first_name }}, how can we help you today ?</h1>
+
+<h2>Login Successfull</h2>
+
+<h3> complete your profile to open a garage </h3>
+<button type='submit'><a href=" ">Complete my profile</a>  </button>
+
+<form action=" {% url 'logout' %} " method="post">
+    {% csrf_token %}
+    <button type='submit'> Signout </button>
+</form>
+
+{% else %}
+<button type='submit'><a href="{% url 'signupopt' %}">Signup</a>  </button>
+<button type='submit'><a href="/signin">Signin</a>  </button>
+{% endif %}
